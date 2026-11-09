@@ -1,0 +1,13 @@
+<!doctype html><html><body style="margin:0;background:transparent">
+<div id="grid" style="display:flex;flex-wrap:wrap;width:1400px">
+<script>
+const names = ["react","nextjs","typescript","tailwindcss","python","flask","supabase","mysql","prisma","opencv","ultralytics","espressif","mqtt","swift"];
+for (const n of names) {
+  const d = document.createElement('div');
+  d.id = 'c-' + n;
+  d.style.cssText = 'width:220px;height:220px;display:grid;place-items:center';
+  d.innerHTML = '<img src="/skills/' + n + '.svg" style="width:195px;height:195px;object-fit:contain">';
+  document.getElementById('grid').appendChild(d);
+}
+</script>
+</div></body></html>
